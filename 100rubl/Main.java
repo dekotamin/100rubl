@@ -1,9 +1,13 @@
 class Main {
     public static void main(String[] args) { ;
-        float balance = 100;
-       float refill = 500;
-       int bonus = 100;
-        float totalbalance = (float) (refill / bonus + balance + refill);
-        System.out.println(totalbalance);
+        int balance = 100;
+        int refill = 1300;
+        int bonus = refill/100;
+        if (refill >= 1000) {
+            bonus = refill/100;
+        } else {
+            bonus = 0;
+        }
+        System.out.println(bonus);
     }
 }
